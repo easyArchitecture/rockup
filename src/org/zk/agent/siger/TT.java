@@ -22,7 +22,7 @@ public class TT {
     private static Logger logger = Logger.getLogger(TT.class);
 
     public static void main(String[] args) throws Exception {
-        System.load("/home/hadoop/sigar/libsigar-amd64-linux.so");
+        System.load(System.getProperty("user.dir")+"/lib/sigar-amd64-winnt.dll");
         // System信息，从jvm获取
         property();
         // cpu信息
